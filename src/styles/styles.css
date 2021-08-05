@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: #f1f1f1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+a {
+  text-decoration: none;
+  color: #2a5ca7;
+}
+a:hover {
+  text-decoration: underline;
+  color: #35588c;
+}
+
+.App {
+  padding: 50px 100px;
+}
+.header {
+  margin-bottom: 16px;
+}
+.my-5 {
+  margin: 16px 0;
+}
+
+.custom-btn {
+  padding: 0.6rem 1rem;
+  border: 1px solid #2a5ca7;
+  background-color: transparent;
+  border-radius: 20px;
+  margin: 6px;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.custom-btn:hover {
+  cursor: pointer;
+  background-color: #2a5ca7;
+  color: beige;
+}
+.custom-btn.selected {
+  background-color: #2a5ca7;
+  color: beige;
+}
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.image-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* height: 400px; */
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.child-1 {
+  flex: 0 0 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.child-2 {
+  flex: 1;
+  align-items: center;
+  padding: 30px;
+}
+.action-btn {
+  border: none;
+  background-color: #2a5ca7;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 16px 6px;
+  border-radius: 20px;
+}
+.action-btn:hover {
+  border: none;
+  background-color: #35588c;
+  color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .App {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 450px) {
+  .image-container {
+    width: 300px;
+    height: 300px;
+  }
+  .child-1 {
+    flex: 0 0 300px;
+  }
+  .child-2 {
+    padding: 3px;
+  }
+}
